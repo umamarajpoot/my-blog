@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const GridComponent: React.FC = () => {
@@ -13,7 +14,7 @@ const GridComponent: React.FC = () => {
         <article className="flex flex-col md:flex-row items-center">
           {/* Image Section */}
           <div className="md:w-1/2 mb-6 md:mb-0">
-            <img
+            <Image
               src="Image (15).png" // Yahan apni image URL daalein
               alt="Grid system"
               className="w-full h-auto rounded-lg"

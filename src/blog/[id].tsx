@@ -1,5 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 interface Post {
   id: number;
@@ -29,7 +30,7 @@ const BlogPost = ({ post }: { post: Post | null }) => {
   return (
     <div className="bg-black text-white py-10 px-5">
       <h1 className="text-center text-3xl font-bold mb-10">{post.title}</h1>
-      <img
+      <Image
         src={post.image}
         alt={post.title}
         className="w-full h-96 object-cover rounded-lg mb-10"

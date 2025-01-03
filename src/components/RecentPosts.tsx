@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const posts = [
   {
     title: "UX review presentations",
@@ -29,7 +31,7 @@ export default function RecentPosts() {
       <div className="grid md:grid-cols-2 gap-6">
         {posts.map((post, index) => (
           <div key={index} className="bg-gray-800 text-white p-4 rounded-lg">
-            <img
+            <Image
               src={post.image}
               alt={post.title}
               className="w-full h-60 object-cover rounded-lg mb-8"

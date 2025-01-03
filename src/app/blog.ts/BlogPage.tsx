@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const BlogPage: React.FC = () => {
@@ -11,7 +12,7 @@ const BlogPage: React.FC = () => {
         <section className="space-y-6">
           {/* Example blog post section */}
           <article className="flex flex-col md:flex-row bg-gray-800 rounded-lg shadow-md overflow-hidden">
-            <img
+            <Image
               src="https://via.placeholder.com/300x200"
               alt="Blog Thumbnail"
               className="w-full md:w-1/3 object-cover"
@@ -36,7 +37,7 @@ const BlogPage: React.FC = () => {
 
           {/* Repeat the article for more posts */}
           <article className="flex flex-col md:flex-row bg-gray-800 rounded-lg shadow-md overflow-hidden">
-            <img
+            <Image
               src="https://via.placeholder.com/300x200"
               alt="Blog Thumbnail"
               className="w-full md:w-1/3 object-cover"

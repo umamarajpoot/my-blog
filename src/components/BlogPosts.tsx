@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const BlogPosts = () => {
@@ -46,7 +47,7 @@ const BlogPosts = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post, index) => (
           <div key={index} className="bg-gray-800 p-5 rounded-lg">
-            <img src={post.image} alt={post.title} className="w-full h-80 object-cover rounded-lg mb-8" />
+            <Image src={post.image} alt={post.title} className="w-full h-80 object-cover rounded-lg mb-8" />
             <h2 className="text-xl font-bold mb-2">{post.title}</h2>
             <p className="text-sm mb-4">{post.description}</p>
             <div className="flex flex-wrap gap-2">
